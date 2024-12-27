@@ -1,0 +1,43 @@
+1. pwd will tell you your absolute path.
+
+2. ls will list out all of the directories and files in ~/music. We should expect ls to return patterns.txt and symmetry.py.
+
+3. nano ~/music/patterns.txt would allow us to edit the file.
+
+4. cat ~/music/patterns.txt would print the file out instead of opening it up.
+
+5. git diff patterns.txt symmetry.txt would display the differences between the two files.
+
+6. mv ~/music/patterns.txt ~/math/calculus would move the file to the desired location
+
+7. rm ~/math/geometry/triangle.txt would remove the desired file.
+
+8. cd ../math would move you to the math folder.
+
+9. git init would make a git repository.
+
+10. You will need the SSH URL for the remote math/ repository. Then you could run the git remote add origin <remote-url> command.
+
+11. cp ~/music/symmetry.txt ~/math would copy the file into the math repository.
+
+12. git status would tell you the current state of the staging area. Git is currently not tracking symmetry.txt because it has not been committed to the repository.
+
+13. git add symmetry.txt would add symmetry.txt to the staging area. git add . would add all changes in the repository to the staging area.
+
+14. Yes, the file is currently being tracked. git remove symmetry.txt would remove the file from the staging area.
+
+15. git commit -m “adding symmetry.txt” would commit the changes to the local repository.
+
+16. git push origin main would commit the change to the local repository to the remote repository along the main branch. Since we just created the local repository, there are no other branches.
+
+17. First, make sure you are own the math branch by running git checkout math, and then create a new branch by using git branch applied_math.
+
+18. git checkout applied_math will move you to the applied_math branch.
+
+ 19. First, add all of your changes to the staging area by running git add physics. Then, commit to the local repository by using git commit -m “add physics fun facts”. Finally, update the remote repository by running git push origin applied_math. Git might prevent you from switching branches before committing these changes if there are conflicts with previous changes.
+
+ 20. git branch will list all of the branches, and the one highlighted in green will be the branch you are currently working on.
+
+21. git checkout main will move you back to the original branch.
+
+22. git merge applied_math main will combine the two branches.
